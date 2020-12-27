@@ -32,7 +32,11 @@ stages:
   - job: ProdDeployJob
     steps:
     - bash: echo build ProdDeployJob
-
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 #steps:
 #- script: echo Hello, world!
 #  displayName: 'Run a one-line script'
