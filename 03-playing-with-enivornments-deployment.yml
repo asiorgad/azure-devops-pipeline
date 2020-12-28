@@ -14,8 +14,8 @@ pool:
 
 stages:
 - stage: Build
-   jobs:
-   -job: BuildJob
+  jobs:
+  - job: BuildJob
      steps:
      - bash: echo "do the build"
 - stage: DevDeploy
