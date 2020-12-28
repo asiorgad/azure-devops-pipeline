@@ -5,12 +5,12 @@ trigger:
 strategy:
     matrix:
        linux:
-         operationSystem: 'ubuntu-latest'
+         operatingSystem: 'ubuntu-latest'
        mac:
-        operatinSystem: 'macos-latest'
+        operatingSystem: 'macos-latest'
 
 pool:
-  vmImage: $(operatinSystem)
+  vmImage: $(operatingSystem)
 
 steps:
 - script: echo running on $operatinSystem
