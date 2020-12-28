@@ -10,7 +10,7 @@ strategy:
     operatinSystem: 'macos-latest'
 
 pool:
-  vmImage: $operatinSystem
+  vmImage: $(operatinSystem)
 
 steps:
 - script: echo running on $operatinSystem
