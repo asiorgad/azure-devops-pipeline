@@ -25,8 +25,8 @@ stages:
     jobs:          
     - deployment: DeployToDEV
       environment: DEV
-        strategy:
-         runOnce:
-          deploy:
-            steps:
-            - script: echo deploy to dev
+      strategy:
+        runOnce:
+         deploy:
+          steps:
+          - script: echo deploy to dev
