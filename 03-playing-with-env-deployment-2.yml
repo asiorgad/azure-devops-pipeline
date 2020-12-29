@@ -32,7 +32,7 @@ stages:
          deploy:
           steps:
           - script: echo deploy to dev
-  - stage: Another-QA-Stage 
+  - stage: Another_QA_Stage 
     jobs:
     - deployment: 
       environment: QA
