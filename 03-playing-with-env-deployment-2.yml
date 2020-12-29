@@ -22,11 +22,11 @@ stages:
             steps:
             - script: echo deploy to qa
   - stage: DevDeploy
-      jobs:          
-      - deployment: DeployToDEV
-        environment: DEV
+    jobs:          
+    - deployment: DeployToDEV
+      environment: DEV
         strategy:
-          runOnce:
-            deploy:
-              steps:
-              - script: echo deploy to dev
+         runOnce:
+          deploy:
+            steps:
+            - script: echo deploy to dev
