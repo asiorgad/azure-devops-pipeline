@@ -39,5 +39,5 @@ stages:
       strategy:
        runOnce:
          deploy:
-         steps:
-         - bash: echo im aproved     
+           steps:
+           - bash: echo im aproved     
